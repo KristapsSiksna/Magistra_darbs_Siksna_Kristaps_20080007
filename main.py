@@ -206,7 +206,8 @@ fig.tight_layout()
 #make best image
 #doesn`t work because max is at 0 std`s
 #best_image_median_intensity = np.clip(image, x1_max - std_where_median_value_image * image_std,
-                                      x1_max + std_where_median_value_image * image_std)
+#                                      x1_max + std_where_median_value_image * image_std)
+
 #make best image using 10 std`s
 best_image_median_intensity = np.clip(image, x1_max - 10 * image_std, x1_max + 10 * image_std)
 
